@@ -1,6 +1,6 @@
 # Crosshair Overlay
 
-This mod allows you to overlay custom crosshairs (or any image you want) over the game.
+This mod allows you to overlay your own custom crosshair (or any image you want) over the game.
 
 ## Usage
 
@@ -14,7 +14,7 @@ All customisation options are available through the mod's config file~ these inc
 - Whether the crosshair should be hidden in the main menu
 
 You can change the active crosshair. To do so, place a png or jpeg image in the mod's install directory, and
-change `File name` to the name of the image (with extension).
+change the config option `File name` to the name of the image (with extension).
 
 ## Manual Installation Instructions
 
