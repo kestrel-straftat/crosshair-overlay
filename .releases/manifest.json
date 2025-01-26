@@ -1,6 +1,6 @@
 {
   "name": "CrosshairOverlay",
-  "version_number": "1.0.1",
+  "version_number": "1.1.1",
   "website_url": "",
   "description": "Allows you to overlay custom crosshairs (or any image you want) onto the game.",
   "dependencies": ["BepInEx-BepInExPack-5.4.2100"]
