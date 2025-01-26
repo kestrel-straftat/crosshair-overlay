@@ -30,6 +30,7 @@
   </ItemGroup>
   
   <ItemGroup>
+    <Content Include=".releases\CHANGELOG.md" />
     <Content Include=".releases\icon.png" />
     <Content Include=".releases\LICENSE.txt" />
     <Content Include=".releases\manifest.json" />
