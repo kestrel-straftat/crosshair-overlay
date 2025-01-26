@@ -29,6 +29,13 @@
     </Reference>
   </ItemGroup>
   
+  <ItemGroup>
+    <Content Include=".releases\icon.png" />
+    <Content Include=".releases\LICENSE.txt" />
+    <Content Include=".releases\manifest.json" />
+    <Content Include=".releases\README.md" />
+  </ItemGroup>
+  
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
     <Exec Command="copy /Y &quot;$(TargetDir)$(TargetName).dll&quot; &quot;%appdata%\com.kesomannen.gale\straftat\profiles\Default\BepInEx\plugins\kestrel-CrosshairOverlay&quot;;&#xA;&quot;C:\Program Files (x86)\Steam\Steam.exe&quot; -applaunch 2386720" />
   </Target>

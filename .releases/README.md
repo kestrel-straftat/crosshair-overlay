@@ -14,7 +14,7 @@ All customisation options are available through the mod's config file~ these inc
 - Whether the crosshair should be hidden in the main menu
 
 You can change the active crosshair. To do so, place a png or jpeg image in the mod's install directory, and
-change the config option `File name` to the name of the image (with extension).
+change `File name` to the name of the image (with extension).
 
 ## Manual Installation Instructions
 
