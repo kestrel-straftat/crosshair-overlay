@@ -1,19 +1,20 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
     <AssemblyName>CrosshairOverlay</AssemblyName>
     <Description>A crosshair overlay mod for Straftat</Description>
-    <Version>1.0.0</Version>
+    <Product>kestrel.straftat.crosshairoverlay</Product>
+    <Version>1.1.1</Version>
+    <TargetFramework>netstandard2.1</TargetFramework>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>preview</LangVersion>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="BepInEx.Analyzers" Version="1.*" PrivateAssets="all" />
     <PackageReference Include="BepInEx.Core" Version="5.*" />
     <PackageReference Include="BepInEx.PluginInfoProps" Version="1.*" />
-    <PackageReference Include="UnityEngine.Modules" Version="2021.3.17" IncludeAssets="compile" />
+    <PackageReference Include="UnityEngine.Modules" Version="2021.3.16" IncludeAssets="compile" />
   </ItemGroup>
   
   <ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))' == 'net'">
@@ -21,23 +22,19 @@
   </ItemGroup>
   
   <ItemGroup>
-    <Reference Include="Assembly-CSharp">
-      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\STRAFTAT\STRAFTAT_Data\Managed\Assembly-CSharp.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\STRAFTAT\STRAFTAT_Data\Managed\UnityEngine.UI.dll</HintPath>
-    </Reference>
+    <Content Include=".releases\**" />
   </ItemGroup>
   
   <ItemGroup>
-    <Content Include=".releases\CHANGELOG.md" />
-    <Content Include=".releases\icon.png" />
-    <Content Include=".releases\LICENSE.txt" />
-    <Content Include=".releases\manifest.json" />
-    <Content Include=".releases\README.md" />
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\Libs\Assembly-CSharp-publicized.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\Libs\UnityEngine.UI.dll</HintPath>
+    </Reference>
   </ItemGroup>
-  
-  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="copy /Y &quot;$(TargetDir)$(TargetName).dll&quot; &quot;%appdata%\com.kesomannen.gale\straftat\profiles\Default\BepInEx\plugins\kestrel-CrosshairOverlay&quot;;&#xA;&quot;C:\Program Files (x86)\Steam\Steam.exe&quot; -applaunch 2386720" />
+
+  <Target Name="CopyDllToGame" AfterTargets="PostBuildEvent">
+    <Copy SourceFiles="$(TargetDir)$(TargetName).dll" DestinationFolder="$(appdata)\com.kesomannen.gale\straftat\profiles\Default\BepInEx\plugins\kestrel-CrosshairOverlay" />
   </Target>
 </Project>

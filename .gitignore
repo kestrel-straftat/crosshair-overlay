@@ -1,5 +1,5 @@
 .idea
-.releases/*/
+.releases
 bin/*
 obj/*
 *.user

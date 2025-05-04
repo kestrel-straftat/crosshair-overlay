@@ -25,7 +25,7 @@ public static class Configs
         filename = config.Bind("General",
             "File name",
             "default-crosshair.png",
-            $"The name of the image file to load. png and jpeg formats are supported, and the file should be placed in the mod's directory. ({Mod.PluginPath})"
+            $"The name of the image file to load. png and jpeg formats are supported, and the file should be placed in the mod's directory. ({Plugin.PluginPath})"
         );
         overlay = config.Bind(
             "General",
