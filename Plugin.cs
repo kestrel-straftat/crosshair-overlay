@@ -20,7 +20,7 @@ namespace CrosshairOverlay;
 // remove people's custom crosshairs whenever they updated the mod. Which isnt ideal.,,,
 
 // by all means have a look at the code if you're trying to learn modding; i think it's
-// reasonably neat and tidy at this stage. Maybe dont make the same mistake i did though
+// reasonably neat and tidy at this stage. Maybe dont make the same mistake i did
 // with regards to locations for storing user's files though. use BepInEx/config/ or something.
 
 [BepInPlugin(PluginInfo.PLUGIN_GUID, PluginInfo.PLUGIN_NAME, PluginInfo.PLUGIN_VERSION)]
