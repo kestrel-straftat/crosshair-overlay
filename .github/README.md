@@ -18,12 +18,14 @@ change the config option `File name` to the name of the image (with extension).
 
 ## Manual Installation Instructions
 
-_(you should probably just use a mod manager like r2modman or gale though)_
+_**(you should probably just use a mod manager like [r2modman](https://thunderstore.io/c/straftat/p/ebkr/r2modman/)
+or [gale](https://thunderstore.io/c/straftat/p/Kesomannen/GaleModManager/) though)**_
 
-!!! You need [Bepinex 5](https://github.com/BepInEx/BepInEx/releases/latest) for mono !!!
-(if you have no idea what the versions mean try BepInEx_win_x64_5.4.23.2 and it might work. maybe)
+!!! You need [Bepinex 5](https://github.com/BepInEx/BepInEx/releases/tag/v5.4.21) !!!
 
-Once bepinex is installed, extract the contents of the zip into the BepInEx/plugins folder in the game's root directory.
+<small>(if you have no idea what the versions mean try BepInEx_x64_5.4.21.0 and it might work. maybe)</small>
+
+Once BepInEx is installed, extract the zip into the BepInEx/plugins folder in the game's root directory.
 
 have fun :3
 
