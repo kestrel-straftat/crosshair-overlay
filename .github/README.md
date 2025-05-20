@@ -1,4 +1,4 @@
-# Crosshair Overlay
+ Crosshair Overlay
 
 This mod allows you to overlay your own custom crosshair (or any image you want) over the game.
 
