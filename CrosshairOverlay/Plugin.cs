@@ -4,11 +4,14 @@ using System.Reflection;
 using BepInEx;
 using BepInEx.Configuration;
 using BepInEx.Logging;
-using UnityEngine;
+using ComputerysModdingUtilities;
 using HarmonyLib;
+using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+
+[assembly: StraftatMod(isVanillaCompatible: true)]
 
 namespace CrosshairOverlay;
 
