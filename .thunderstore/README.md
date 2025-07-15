@@ -13,19 +13,15 @@ All customisation options are available through the mod's config file~ these inc
 - Whether to overlay or underlay the image relative to UI
 - Whether the crosshair should be hidden in the main menu
 
-You can change the active crosshair. To do so, place a png or jpeg image in the mod's install directory, and
+To change the crosshair, place a png or jpeg image in the mod's install directory, and
 change the config option `File name` to the name of the image (with extension).
 
 ## Manual Installation Instructions
 
-_**(you should probably just use a mod manager like [r2modman](https://thunderstore.io/c/straftat/p/ebkr/r2modman/)
-or [gale](https://thunderstore.io/c/straftat/p/Kesomannen/GaleModManager/) though)**_
+_**(you should probably just use a mod manager like [r2modman](https://thunderstore.io/c/straftat/p/ebkr/r2modman/) or [gale](https://thunderstore.io/c/straftat/p/Kesomannen/GaleModManager/) though)**_
 
-!!! You need [Bepinex 5](https://github.com/BepInEx/BepInEx/releases/tag/v5.4.21) !!!
-
-<small>(if you have no idea what the versions mean try BepInEx_x64_5.4.21.0 and it might work. maybe)</small>
-
-Once BepInEx is installed, extract the zip into the BepInEx/plugins folder in the game's root directory.
+- Download and install [Bepinex 5.4.21](https://github.com/BepInEx/BepInEx/releases/tag/v5.4.21) <br><small>(if you have no idea what the versions mean try BepInEx_x64_5.4.21.0 and it might work. maybe)</small>
+- Once BepInEx is installed, extract the zip into the BepInEx/plugins folder in the game's root directory.
 
 have fun :3
 

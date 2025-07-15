@@ -4,10 +4,11 @@
     <AssemblyName>CrosshairOverlay</AssemblyName>
     <Description>A crosshair overlay mod for Straftat</Description>
     <Product>kestrel.straftat.crosshairoverlay</Product>
-    <Version>1.1.1</Version>
+    <Version>1.1.2</Version>
     <TargetFramework>netstandard2.1</TargetFramework>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <LangVersion>preview</LangVersion>
+    <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(GameDir)' == ''">
@@ -39,8 +40,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include=".github\**" />
-    <Content Include=".releases\**" />
+    <None Include=".github\**" />
+    <None Include=".thunderstore\**" />
   </ItemGroup>
 
   <Target Name="CopyDllToGame" AfterTargets="PostBuildEvent">
